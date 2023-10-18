@@ -17,27 +17,27 @@ body{
   color: #FFF;
 }
 .container{
-  padding: 0 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
 .header{
-  padding: 40px;
+	padding 40px 0;
 }
-.header__container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.header .container{
+	display: flex;
+	align-items:center;
 }
+
 .logo img{
   vertical-align: bottom;
 }
-.menu__list{
-  display: flex;
-  gap: clamp(44px,7vw,88px);
-  list-style: none;
+.menu-item{
+	margin-right: 88px;
 }
-.menu__item a{
+.menu{
+	margin-left: 191px;
+}
+.menu-item a{
   font-family: Gilroy;
   font-size: 18px;
   font-style: normal;
@@ -47,36 +47,41 @@ body{
   text-decoration: none;
   cursor: pointer;
 }
-.menu__item a:hover{
+.menu-item a:hover{
   border-bottom: 2px solid white;
 }
-.header__currency{
+.menu-list{
+	display: flex;
+	list-style: none;
+}
+.currency{
   border: 1px solid white;
   border-radius: 5px;
   width: 45px;
-  aspect-ratio: 1;
+  height: 45px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   user-select: none;
   box-sizing: border-box;
+  margin-left: auto;
+  padding: 11px;
 }
-.info__content{
-  padding-top: 103px;
-  padding-bottom: 199px;
+.main-info{
+
   max-width: 608px;
-  display: flex;
-  flex-direction: column;
 }
-.info__small-info{
+.main-content{
+	  padding-top: 103px;
+  padding-bottom: 199px;
+}
+.main-small-info{
   border-radius: 100px;
 background: #D3320F;
 padding: 12px 16px;
 display: inline-block;
 font-size: 18px;
 }
-.info__title{
+.main-title{
   font-family: 'Merriweather',sans-serif;
 font-size: 120px;
 font-style: normal;
@@ -84,13 +89,13 @@ font-weight: 900;
 line-height: 130%; /* 156px */
 letter-spacing: 3.6px;
 text-transform: uppercase;
+margin-bottom: 56px;
 }
-.info__content:first-child{
-  gap: 56px;
-}
-.info__text{
+
+.main-text{
   font-size: 24px;
   font-weight: 600;
+  margin-bottom: 56px;
 }
 button{
   color: #191411;
@@ -114,12 +119,12 @@ button:hover{
 .info__container{
   position: relative;
 }
-.main__main-image{
+.main-image{
   position: absolute;
   top: -123px;
   left: calc(100% - 991px);
 }
-.wraper{
+.main{
   background-image: url("../img/main_bg.png");
   background-position: top center;
   overflow: hidden;
