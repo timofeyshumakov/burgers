@@ -116,7 +116,7 @@ button{
 button:hover{
   background: linear-gradient(96deg, #AC6115 0%, #9E7A19 100%);
 }
-.info-container{
+.main-content .container{
   position: relative;
 }
 .main-image{
